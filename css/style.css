@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
+
+.caixa {
+    background: url(../img/numeros.svg);
+    font-family: 'Hanuman', serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#grid {
+    display: grid;    
+    background-color: #f099fc;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 2px;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;       
+}
+#flex {
+    display: flex;
+    font-size: 20pt;
+    gap: 2px;
+    color: white;
+}
+.linha {
+    display: flex;
+    justify-content: center;
+    background-color: #9d50dcff;
+    border:  2px solid #c054db;
+    border-radius: 5px;
+    padding: 25px;
+    width: 30px;
+    cursor: pointer;
+}
+.linha:hover {
+    background-color: #a261d6;
+    color: #000;
+}
+.lcd {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    justify-content: end;
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'Hanuman', serif;
+    color: white;    
+    user-select: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    resize: none;
+    text-align: end; 
+    cursor:text;
+}
+#tela {
+    display: grid;
+    width: 322px;
+    background-color: #9d50dcff;
+    border:  5px solid #c054db;
+    border-radius: 5px;
+    padding-right: 10px;
+    justify-content: end;
+}
+#painel {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #fff;
+}
+.bts_del {
+    border: solid 1px #c054db;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+}
+.bts_del:active {
+    transform: translateY(1px);
+}
+#del_campo_um {
+    background: linear-gradient(to bottom,#f099fc 50%, red 50%);
+}
+#del_campo_dois {
+    background: linear-gradient(to bottom, red 50%, #f099fc 50%);
+}
+#del_tudo {
+    background-color: red;
+}
+#meu_logo {
+    display: flex;
+    cursor: pointer;
+}
+#marca {
+    cursor: cell;
+}
